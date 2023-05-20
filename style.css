@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back {
+  width: 100%;
+  height: 720px;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.807), rgba(0, 0, 0, 0.879));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back .mode {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.back .mode .button {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(17, 15, 15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  transition: 1s;
+}
+.back .mode .button .point {
+  width: 45%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 2px;
+  transition: 1s;
+  cursor: pointer;
+}
+.back .mode .button .point img {
+  width: 100%;
+}
+.back .calc {
+  width: 30%;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 17px 17px 17px black;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+.back .calc .display {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back .calc .display input {
+  width: 90%;
+  height: 90px;
+  background-color: #737956;
+  font-size: 50px;
+  text-align: right;
+  border-radius: 7px;
+  border: 2px solid black;
+  cursor: default;
+}
+.back .calc .buttons {
+  width: 90%;
+  height: 460px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 17% 17% 17% 17% 17%;
+  gap: 13px;
+}
+.back .calc .buttons div {
+  background-color: #292929;
+  border-radius: 9px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.back .calc .buttons div div {
+  width: 92%;
+  height: 92%;
+  border: none;
+  margin: 2.5px;
+  margin-left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, rgb(37, 36, 36), rgba(101, 98, 98, 0.784));
+  border: 2px solid #444444;
+  border-bottom-color: #646262;
+  border-left-color: #646262;
+  box-shadow: 3px 3px 3px #444444;
+}
+@keyframes butt {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.back .calc .buttons div h2 {
+  color: white;
+  font-weight: 400;
+}
+.back .calc .buttons .key-1 {
+  grid-area: span 1/span 2;
+  background-color: #930000;
+}
+.back .calc .buttons .key-1 .butt {
+  width: 94%;
+  background-image: linear-gradient(to left, #830808, #ad3939);
+  border-color: #ad3939;
+  box-shadow: 2px 2px 5px #ad3939;
+  border-top-color: #830808;
+  border-right-color: #830808;
+}
+.back .calc .buttons .key-11 {
+  grid-area: span 2/span 1;
+}
+.back .calc .buttons .key-11 .butt {
+  height: 95%;
+}
+.back .calc .buttons .key-18 {
+  background-color: #186db1;
+}
+.back .calc .buttons .key-18 .butt {
+  background-image: linear-gradient(to left, #2d8ad5, #85c2f1);
+  border-color: #69b6f2;
+  box-shadow: 2px 2px 5px #69b6f2;
+  border-top-color: #2d8ad5;
+  border-right-color: #2d8ad5;
+}
+
+@media (max-width: 600px) {
+  .back .mode {
+    width: 20%;
+  }
+  .back .calc {
+    width: 60%;
+  }
+}
+@media (max-width: 900px) {
+  .back .mode {
+    width: 30%;
+  }
+  .back .calc {
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */
